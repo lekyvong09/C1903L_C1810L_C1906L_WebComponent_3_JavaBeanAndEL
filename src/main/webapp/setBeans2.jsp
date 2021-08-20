@@ -12,8 +12,13 @@
             </td>
             <td style="width:75%;height:80%;">
                 <jsp:useBean id="wu" class="com.ray.models.WebUser" scope="request">
-                    <jsp:setProperty name="wu" property="uid" value='<%=request.getParameter("uid") %>' />
-                    <jsp:setProperty name="wu" property="pwd" value='<%=request.getParameter("pwd") %>' />
+<%--                    First method to get Parameter--%>
+<%--                    <jsp:setProperty name="wu" property="uid" value='<%=request.getParameter("uid") %>' />--%>
+<%--                    <jsp:setProperty name="wu" property="pwd" value='<%=request.getParameter("pwd") %>' />--%>
+
+<%--                    Second method to get parameter--%>
+                    <jsp:setProperty name="wu" property="uid" param="uid" />
+                    <jsp:setProperty name="wu" property="pwd" param="pwd" />
                     <jsp:setProperty name="wu" property="authLevel" value="1" />
                 </jsp:useBean>
                 <jsp:forward page="useBeans.jsp" />
