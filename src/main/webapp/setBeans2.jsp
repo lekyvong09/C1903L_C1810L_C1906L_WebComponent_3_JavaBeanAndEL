@@ -17,9 +17,12 @@
 <%--                    <jsp:setProperty name="wu" property="pwd" value='<%=request.getParameter("pwd") %>' />--%>
 
 <%--                    Second method to get parameter--%>
-                    <jsp:setProperty name="wu" property="uid" param="uid" />
-                    <jsp:setProperty name="wu" property="pwd" param="pwd" />
-                    <jsp:setProperty name="wu" property="authLevel" value="1" />
+<%--                    <jsp:setProperty name="wu" property="uid" param="uid" />--%>
+<%--                    <jsp:setProperty name="wu" property="pwd" param="pwd" />--%>
+<%--                    <jsp:setProperty name="wu" property="authLevel" value="1" />--%>
+
+<%--                    Third method - get from URL parameters--%>
+                    <jsp:setProperty name="wu" property="*" />
                 </jsp:useBean>
                 <jsp:forward page="useBeans.jsp" />
             </td>

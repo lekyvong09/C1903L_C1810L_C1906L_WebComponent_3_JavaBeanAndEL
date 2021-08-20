@@ -11,7 +11,7 @@
                 <jsp:include page="navbar.jsp" />
             </td>
             <td style="width:75%;height:80%;">
-                <form id="login" method="post" action="setBeans2.jsp">
+                <form id="login" method="post" action="setBeansAllPropertiesLoginUser.do">
                     <table style="width: 450px">
                         <tr>
                             <td><span>Username:</span></td>
