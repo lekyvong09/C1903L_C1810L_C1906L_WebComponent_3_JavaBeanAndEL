@@ -14,6 +14,10 @@
             <td style="width:75%;height:80%;">
                 Hello ${initParam.dbuserid}
                 You are using browser <br><strong>${header["user-agent"]}</strong><br>
+                <br>
+                <h3>Application Variable</h3>
+                <span>User Id:</span> ${applicationScope.uid} <br>
+                <span>PWD:</span> ${applicationScope.pwd} <br>
 
             </td>
         </tr>
