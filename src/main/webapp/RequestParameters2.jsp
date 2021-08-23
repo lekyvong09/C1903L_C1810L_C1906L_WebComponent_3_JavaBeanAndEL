@@ -1,8 +1,7 @@
-<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<!DOCTYPE html>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Welcome to City Manager</title>
+    <title>Title</title>
 </head>
 <body>
     <%@include file="header.jsp" %>
@@ -12,9 +11,10 @@
                 <jsp:include page="navbar.jsp" />
             </td>
             <td style="width:75%;height:80%;">
-                Hello ${initParam.dbuserid}
-                You are using browser <br><strong>${header["user-agent"]}</strong><br>
-
+                <h1>UID</h1>
+                ${param.uid}
+                <h1>PWD</h1>
+                ${param.pwd}
             </td>
         </tr>
     </table>
