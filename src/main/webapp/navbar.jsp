@@ -4,3 +4,4 @@
 <a href="RequestParameters.jsp">EL - Request Parameter</a><br>
 <a href="RequestScope.do">EL - Request Scope</a><br>
 <a href="SessionScope.jsp">EL - Session Scope</a><br>
+<a href="Cookies.jsp">EL - Cookie</a><br>

@@ -22,6 +22,17 @@
                 <%
                     session.setAttribute("uid", "sessionUser");
                     session.setAttribute("pwd", "sessionPassword");
+
+                    // set cookie
+                    int cookieLife = 3600*24*7;
+                    Cookie uidCookie = new Cookie("credential_uid", "cookieUser");
+                    uidCookie.setMaxAge(cookieLife);
+                    response.addCookie(uidCookie);
+
+                    Cookie pwdCookie = new Cookie("credential_pwd", "cookiePwd");
+                    uidCookie.setMaxAge(cookieLife);
+                    response.addCookie(pwdCookie);
+
                 %>
             </td>
         </tr>
