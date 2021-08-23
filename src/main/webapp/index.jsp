@@ -19,6 +19,10 @@
                 <span>User Id:</span> ${applicationScope.uid} <br>
                 <span>PWD:</span> ${applicationScope.pwd} <br>
 
+                <%
+                    session.setAttribute("uid", "sessionUser");
+                    session.setAttribute("pwd", "sessionPassword");
+                %>
             </td>
         </tr>
     </table>
